@@ -1,0 +1,79 @@
+{
+    "blocks": [
+               {
+               "name": "1 BHK Flats Apartments near you.",
+               "children":  [
+                             {
+                             "name": "1Baths 2Bed Residential Apartment for Rent",
+                             "price": "43,00",
+                             "image_url": "https://az616578.vo.msecnd.net/files/2016/07/26/636050962570138758-2091420308_Elegant-apartment-finder.jpg"
+                             },
+                             {
+                             "name": "2Baths 2Bed Residential Apartment for Rent",
+                             "price": "135,500",
+                             "image_url": "https://images4.roofandfloor.com/listing_1fc459365cd105674aa7c462d144564b/1024x600/best-quality-lotus-valley-in-puzhal-elevation-photo-1loh.jpg"
+                             },
+                             {
+                             "name": "3Baths 2Bed Residential Apartment for Rent",
+                             "price": "2,430",
+                             "image_url": "http://www.offlineproperty.com/images/property/apartment_Chennai_4037(0).pjpeg"
+                             },
+                             {
+                             "name": "4Baths 2Bed Residential Apartment for Rent",
+                             "price": "5,500",
+                             "image_url": "https://www.yourpropertyproject.com.au/media/1469/apartment.jpg?width=765&height=362&mode=crop"
+                             }
+                             ]
+               },
+               {
+               "name": "2 BHK Flats Apartments near you.",
+               "children":  [
+                             {
+                             "name": "1Baths 2Bed Studio Apartment for Rent",
+                             "price": "3,000",
+                             "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WWa2dX-Sl26SQmcMItz5s1Pbo0TI12ck7umpxma96T8ZnfGG"
+                             },
+                             {
+                             "name": "2Baths 2Bed Studio Apartment for Rent",
+                             "price": "135,500",
+                             "image_url": "https://res.cloudinary.com/apartmentlist/image/upload/t_fullsize/e12ca8cfd341775334b58afb9e413b7b.jpg"
+                             },
+                             {
+                             "name": "3Baths 2Bed Studio Apartment for Rent",
+                             "price": "243,00",
+                             "image_url": "http://media.equityapartments.com/images/c_crop,x_0,y_0,w_1920,h_1080/c_fill,w_1920,h_1080/q_80/4037-24/riverpark-apartments-exterior.jpg"
+                             },
+                             {
+                             "name": "4Baths 2Bed Studio Apartment for Rent",
+                             "price": "5,000,500",
+                             "image_url": "http://www.vaidyahomeskollam.com/images/resource/appartment.jpg"
+                             }
+                             ]
+               },
+               {
+               "name": "3 BHK Flats Apartments near you.",
+               "children":  [
+                             {
+                             "name": "1Bed Film Apartment for Rent",
+                             "price": "22,000",
+                             "image_url": "https://www.yourpropertyproject.com.au/media/1469/apartment.jpg?width=765&height=362&mode=crop"
+                             },
+                             {
+                             "name": "2Bed Film Apartment for Rent",
+                             "price": "15,500",
+                             "image_url": "https://www.xiaozhouzaixian.com/wp-content/uploads/2015/02/How-To-Promote-An-Apartment-For-Rent.jpg"
+                             },
+                             {
+                             "name": "2Bed Film Apartment for Rent",
+                             "price": "2,430,000",
+                             "image_url": "https://ssl.c.photoshelter.com/img-get2/I0000uT2FX3RfAg8/sec=wd0sd0oe0lwe0ms1000ed20180625IVWRR0tbuQ0vVib/fill=1020x683/Solstice-01.jpg"
+                             },
+                             {
+                             "name": "3Bed Film Apartment for Rent",
+                             "price": "75,500",
+                             "image_url": "http://www.yiyangnhy.com/wp-content/uploads/2017/08/Apartment-in-Chennai.jpeg"
+                             }
+                             ]
+               }
+               ]
+}

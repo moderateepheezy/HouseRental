@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94A8F75B20DDA1C700118F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F75A20DDA1C700118F7A /* AppDelegate.swift */; };
+		94A8F75D20DDA1C700118F7A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F75C20DDA1C700118F7A /* HomeVC.swift */; };
+		94A8F76220DDA1E400118F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F76120DDA1E400118F7A /* Assets.xcassets */; };
+		94A8F76520DDA1E400118F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F76320DDA1E400118F7A /* LaunchScreen.storyboard */; };
+		94A8F76E20DDB21800118F7A /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F76D20DDB21800118F7A /* MainTabViewController.swift */; };
+		94A8F77120DDB79D00118F7A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F77020DDB79D00118F7A /* Extension.swift */; };
+		94A8F78820DDB9AC00118F7A /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F77620DDB9A800118F7A /* Lato-Light.ttf */; };
+		94A8F78920DDB9AC00118F7A /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F77720DDB9A800118F7A /* Lato-Bold.ttf */; };
+		94A8F78F20DDB9AC00118F7A /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F77D20DDB9A900118F7A /* Lato-Semibold.ttf */; };
+		94A8F79020DDB9AC00118F7A /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F77E20DDB9AA00118F7A /* Lato-Regular.ttf */; };
+		94A8F79120DDB9AC00118F7A /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F77F20DDB9AA00118F7A /* Lato-Medium.ttf */; };
+		94A8F79720DDB9AC00118F7A /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F78520DDB9AB00118F7A /* Lato-Black.ttf */; };
+		94A8F79920DDBCBE00118F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F79820DDBCBE00118F7A /* Constants.swift */; };
+		94A8F79F20DDD44300118F7A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F79E20DDD44300118F7A /* CardView.swift */; };
+		94A8F7A220DDE19900118F7A /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7A120DDE19900118F7A /* CustomSegmentedControl.swift */; };
+		94A8F7A420DED4A700118F7A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F7A320DED4A600118F7A /* test.json */; };
+		94A8F7A620DED5EF00118F7A /* RentalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7A520DED5EF00118F7A /* RentalsCell.swift */; };
+		94A8F7A820DED6BD00118F7A /* ApartmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7A720DED6BD00118F7A /* ApartmentCell.swift */; };
+		94A8F7AB20DF308900118F7A /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7AA20DF308800118F7A /* Rental.swift */; };
+		94A8F7AD20DFD0B800118F7A /* ApartmentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7AC20DFD0B800118F7A /* ApartmentDetailVC.swift */; };
+		94A8F7AF20DFE7CE00118F7A /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7AE20DFE7CE00118F7A /* SliderViewController.swift */; };
+		94A8F7B120DFEB3E00118F7A /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7B020DFEB3E00118F7A /* PageCell.swift */; };
+		94A8F7B420E0257B00118F7A /* PriceDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7B320E0257B00118F7A /* PriceDetailCell.swift */; };
+		94A8F7B520E02FF000118F7A /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A8F7B220E024F500118F7A /* Lato-SemiboldItalic.ttf */; };
+		94A8F7B720E0325800118F7A /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7B620E0325800118F7A /* FeatureCell.swift */; };
+		94A8F7B920E0373000118F7A /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7B820E0373000118F7A /* Feature.swift */; };
+		94A8F7BB20E0490F00118F7A /* ComfirmationAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94A8F75720DDA1C700118F7A /* HouseRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A8F75A20DDA1C700118F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94A8F75C20DDA1C700118F7A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		94A8F76120DDA1E400118F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94A8F76420DDA1E400118F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94A8F76620DDA1E400118F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A8F76D20DDB21800118F7A /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		94A8F77020DDB79D00118F7A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		94A8F77620DDB9A800118F7A /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		94A8F77720DDB9A800118F7A /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		94A8F77D20DDB9A900118F7A /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		94A8F77E20DDB9AA00118F7A /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		94A8F77F20DDB9AA00118F7A /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		94A8F78520DDB9AB00118F7A /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		94A8F79820DDBCBE00118F7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		94A8F79E20DDD44300118F7A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		94A8F7A120DDE19900118F7A /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		94A8F7A320DED4A600118F7A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		94A8F7A520DED5EF00118F7A /* RentalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalsCell.swift; sourceTree = "<group>"; };
+		94A8F7A720DED6BD00118F7A /* ApartmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentCell.swift; sourceTree = "<group>"; };
+		94A8F7AA20DF308800118F7A /* Rental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental.swift; sourceTree = "<group>"; };
+		94A8F7AC20DFD0B800118F7A /* ApartmentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentDetailVC.swift; sourceTree = "<group>"; };
+		94A8F7AE20DFE7CE00118F7A /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		94A8F7B020DFEB3E00118F7A /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		94A8F7B220E024F500118F7A /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		94A8F7B320E0257B00118F7A /* PriceDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailCell.swift; sourceTree = "<group>"; };
+		94A8F7B620E0325800118F7A /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		94A8F7B820E0373000118F7A /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfirmationAlertView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94A8F75420DDA1C700118F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94A8F74E20DDA1C600118F7A = {
+			isa = PBXGroup;
+			children = (
+				94A8F75920DDA1C700118F7A /* HouseRent */,
+				94A8F75820DDA1C700118F7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94A8F75820DDA1C700118F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F75720DDA1C700118F7A /* HouseRent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94A8F75920DDA1C700118F7A /* HouseRent */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F77220DDB97500118F7A /* Resources */,
+				94A8F76F20DDB78B00118F7A /* Helper */,
+				94A8F7A920DF306100118F7A /* Model */,
+				94A8F79D20DDD41C00118F7A /* View */,
+				94A8F76C20DDB1D900118F7A /* Controllers */,
+				94A8F75A20DDA1C700118F7A /* AppDelegate.swift */,
+				94A8F76620DDA1E400118F7A /* Info.plist */,
+			);
+			path = HouseRent;
+			sourceTree = "<group>";
+		};
+		94A8F76C20DDB1D900118F7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F75C20DDA1C700118F7A /* HomeVC.swift */,
+				94A8F76D20DDB21800118F7A /* MainTabViewController.swift */,
+				94A8F7AC20DFD0B800118F7A /* ApartmentDetailVC.swift */,
+				94A8F7AE20DFE7CE00118F7A /* SliderViewController.swift */,
+				94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		94A8F76F20DDB78B00118F7A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F77020DDB79D00118F7A /* Extension.swift */,
+				94A8F79820DDBCBE00118F7A /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		94A8F77220DDB97500118F7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F77320DDB98E00118F7A /* Fonts */,
+				94A8F76120DDA1E400118F7A /* Assets.xcassets */,
+				94A8F76320DDA1E400118F7A /* LaunchScreen.storyboard */,
+				94A8F7A320DED4A600118F7A /* test.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94A8F77320DDB98E00118F7A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F7B220E024F500118F7A /* Lato-SemiboldItalic.ttf */,
+				94A8F78520DDB9AB00118F7A /* Lato-Black.ttf */,
+				94A8F77720DDB9A800118F7A /* Lato-Bold.ttf */,
+				94A8F77620DDB9A800118F7A /* Lato-Light.ttf */,
+				94A8F77F20DDB9AA00118F7A /* Lato-Medium.ttf */,
+				94A8F77E20DDB9AA00118F7A /* Lato-Regular.ttf */,
+				94A8F77D20DDB9A900118F7A /* Lato-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		94A8F79D20DDD41C00118F7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F7A020DDE18000118F7A /* CustomView */,
+				94A8F7A520DED5EF00118F7A /* RentalsCell.swift */,
+				94A8F7A720DED6BD00118F7A /* ApartmentCell.swift */,
+				94A8F7B020DFEB3E00118F7A /* PageCell.swift */,
+				94A8F7B320E0257B00118F7A /* PriceDetailCell.swift */,
+				94A8F7B620E0325800118F7A /* FeatureCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94A8F7A020DDE18000118F7A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F79E20DDD44300118F7A /* CardView.swift */,
+				94A8F7A120DDE19900118F7A /* CustomSegmentedControl.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		94A8F7A920DF306100118F7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F7AA20DF308800118F7A /* Rental.swift */,
+				94A8F7B820E0373000118F7A /* Feature.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94A8F75620DDA1C700118F7A /* HouseRent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94A8F76920DDA1E400118F7A /* Build configuration list for PBXNativeTarget "HouseRent" */;
+			buildPhases = (
+				94A8F75320DDA1C700118F7A /* Sources */,
+				94A8F75420DDA1C700118F7A /* Frameworks */,
+				94A8F75520DDA1C700118F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseRent;
+			productName = HouseRent;
+			productReference = 94A8F75720DDA1C700118F7A /* HouseRent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94A8F74F20DDA1C700118F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = SimpuMind;
+				TargetAttributes = {
+					94A8F75620DDA1C700118F7A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 94A8F75220DDA1C700118F7A /* Build configuration list for PBXProject "HouseRent" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94A8F74E20DDA1C600118F7A;
+			productRefGroup = 94A8F75820DDA1C700118F7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94A8F75620DDA1C700118F7A /* HouseRent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94A8F75520DDA1C700118F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A8F7B520E02FF000118F7A /* Lato-SemiboldItalic.ttf in Resources */,
+				94A8F78820DDB9AC00118F7A /* Lato-Light.ttf in Resources */,
+				94A8F78920DDB9AC00118F7A /* Lato-Bold.ttf in Resources */,
+				94A8F76520DDA1E400118F7A /* LaunchScreen.storyboard in Resources */,
+				94A8F79120DDB9AC00118F7A /* Lato-Medium.ttf in Resources */,
+				94A8F78F20DDB9AC00118F7A /* Lato-Semibold.ttf in Resources */,
+				94A8F79720DDB9AC00118F7A /* Lato-Black.ttf in Resources */,
+				94A8F76220DDA1E400118F7A /* Assets.xcassets in Resources */,
+				94A8F79020DDB9AC00118F7A /* Lato-Regular.ttf in Resources */,
+				94A8F7A420DED4A700118F7A /* test.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94A8F75320DDA1C700118F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A8F79920DDBCBE00118F7A /* Constants.swift in Sources */,
+				94A8F7A220DDE19900118F7A /* CustomSegmentedControl.swift in Sources */,
+				94A8F7A820DED6BD00118F7A /* ApartmentCell.swift in Sources */,
+				94A8F7AF20DFE7CE00118F7A /* SliderViewController.swift in Sources */,
+				94A8F7B920E0373000118F7A /* Feature.swift in Sources */,
+				94A8F7AD20DFD0B800118F7A /* ApartmentDetailVC.swift in Sources */,
+				94A8F75D20DDA1C700118F7A /* HomeVC.swift in Sources */,
+				94A8F75B20DDA1C700118F7A /* AppDelegate.swift in Sources */,
+				94A8F7BB20E0490F00118F7A /* ComfirmationAlertView.swift in Sources */,
+				94A8F7AB20DF308900118F7A /* Rental.swift in Sources */,
+				94A8F7B720E0325800118F7A /* FeatureCell.swift in Sources */,
+				94A8F7B120DFEB3E00118F7A /* PageCell.swift in Sources */,
+				94A8F76E20DDB21800118F7A /* MainTabViewController.swift in Sources */,
+				94A8F7A620DED5EF00118F7A /* RentalsCell.swift in Sources */,
+				94A8F79F20DDD44300118F7A /* CardView.swift in Sources */,
+				94A8F7B420E0257B00118F7A /* PriceDetailCell.swift in Sources */,
+				94A8F77120DDB79D00118F7A /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94A8F76320DDA1E400118F7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94A8F76420DDA1E400118F7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94A8F76720DDA1E400118F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94A8F76820DDA1E400118F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94A8F76A20DDA1E400118F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NS5XW2Q4P8;
+				INFOPLIST_FILE = HouseRent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simpumind.HouseRent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94A8F76B20DDA1E400118F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NS5XW2Q4P8;
+				INFOPLIST_FILE = HouseRent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simpumind.HouseRent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94A8F75220DDA1C700118F7A /* Build configuration list for PBXProject "HouseRent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A8F76720DDA1E400118F7A /* Debug */,
+				94A8F76820DDA1E400118F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94A8F76920DDA1E400118F7A /* Build configuration list for PBXNativeTarget "HouseRent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A8F76A20DDA1E400118F7A /* Debug */,
+				94A8F76B20DDA1E400118F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94A8F74F20DDA1C700118F7A /* Project object */;
+}
