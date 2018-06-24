@@ -42,6 +42,7 @@ class ComfirmationAlertView: UIViewController {
     private lazy var yourContactLabel: UILabel = {
         let label = UILabel()
         label.attributedText = setupText()
+        label.numberOfLines = 3
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -111,8 +112,8 @@ class ComfirmationAlertView: UIViewController {
     func setupText() -> NSMutableAttributedString {
         let stringFormatting = NSMutableAttributedString()
         stringFormatting
-            .normal("Your contact person name is\n", font: UIFont.setFont(of: 14), textColor: UIColor(red: 0.37, green: 0.37, blue: 0.37, alpha: 1))
-            .bold("Karthick", font: UIFont.setBoldFont(of: 14), textColor: UIColor(red: 0.27, green: 0.2, blue: 0.2, alpha: 1))
+            .normal("Your contact person name is\n\n", font: UIFont.setFont(of: 14), textColor: UIColor(red: 0.37, green: 0.37, blue: 0.37, alpha: 1))
+            .normal("Karthick", font: UIFont.setBoldFont(of: 14), textColor: UIColor(red: 0.27, green: 0.2, blue: 0.2, alpha: 1))
         return stringFormatting
     }
     
