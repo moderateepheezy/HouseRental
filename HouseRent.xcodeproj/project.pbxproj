@@ -41,6 +41,7 @@
 		94A8F7CB20E0933300118F7A /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7C820E0933300118F7A /* RangeSeekSliderDelegate.swift */; };
 		94A8F7CC20E0933300118F7A /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7C920E0933300118F7A /* TapticEngine.swift */; };
 		94A8F7CD20E0933300118F7A /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7CA20E0933300118F7A /* RangeSeekSlider.swift */; };
+		94A8F7CF20E09E7900118F7A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7CE20E09E7900118F7A /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		94A8F7C820E0933300118F7A /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
 		94A8F7C920E0933300118F7A /* TapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapticEngine.swift; sourceTree = "<group>"; };
 		94A8F7CA20E0933300118F7A /* RangeSeekSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSlider.swift; sourceTree = "<group>"; };
+		94A8F7CE20E09E7900118F7A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				94A8F7AE20DFE7CE00118F7A /* SliderViewController.swift */,
 				94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */,
 				94A8F7BC20E060F900118F7A /* FilterVC.swift */,
+				94A8F7CE20E09E7900118F7A /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				94A8F7C420E087BC00118F7A /* PriceRangeCell.swift in Sources */,
 				94A8F7A820DED6BD00118F7A /* ApartmentCell.swift in Sources */,
 				94A8F7AF20DFE7CE00118F7A /* SliderViewController.swift in Sources */,
+				94A8F7CF20E09E7900118F7A /* ProfileVC.swift in Sources */,
 				94A8F7B920E0373000118F7A /* Feature.swift in Sources */,
 				94A8F7AD20DFD0B800118F7A /* ApartmentDetailVC.swift in Sources */,
 				94A8F75D20DDA1C700118F7A /* HomeVC.swift in Sources */,

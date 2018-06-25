@@ -37,6 +37,7 @@ class FeatureCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear
+        selectionStyle = .none
         [iconImageView, titleLabel, roomDetailsLabel].forEach {addSubview($0)}
     }
     

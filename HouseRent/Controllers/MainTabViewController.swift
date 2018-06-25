@@ -37,11 +37,11 @@ class MainTabViewController: UITabBarController {
         controller2.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "filter"), tag: 2)
         let nav2 = UINavigationController(rootViewController: controller2)
         
-        let controller3 = HomeVC()
+        let controller3 = UIViewController()
         controller3.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "notification"), tag: 3)
         let nav3 = UINavigationController(rootViewController: controller3)
         
-        let controller4 = HomeVC()
+        let controller4 = ProfileVC()
         controller4.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "profile"), tag: 3)
         let nav4 = UINavigationController(rootViewController: controller4)
         

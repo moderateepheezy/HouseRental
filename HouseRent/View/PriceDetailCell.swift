@@ -38,6 +38,7 @@ class PriceDetailCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear
+        selectionStyle = .none
         [titleLabel, descriptionLabel, priceDetailsLabel].forEach {addSubview($0)}
     }
     
