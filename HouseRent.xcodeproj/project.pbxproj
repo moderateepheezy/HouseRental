@@ -34,6 +34,13 @@
 		94A8F7B720E0325800118F7A /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7B620E0325800118F7A /* FeatureCell.swift */; };
 		94A8F7B920E0373000118F7A /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7B820E0373000118F7A /* Feature.swift */; };
 		94A8F7BB20E0490F00118F7A /* ComfirmationAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */; };
+		94A8F7BD20E060F900118F7A /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7BC20E060F900118F7A /* FilterVC.swift */; };
+		94A8F7BF20E06CE800118F7A /* FilterByCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7BE20E06CE800118F7A /* FilterByCell.swift */; };
+		94A8F7C120E06D7000118F7A /* FilterItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7C020E06D7000118F7A /* FilterItemCell.swift */; };
+		94A8F7C420E087BC00118F7A /* PriceRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7C320E087BC00118F7A /* PriceRangeCell.swift */; };
+		94A8F7CB20E0933300118F7A /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7C820E0933300118F7A /* RangeSeekSliderDelegate.swift */; };
+		94A8F7CC20E0933300118F7A /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7C920E0933300118F7A /* TapticEngine.swift */; };
+		94A8F7CD20E0933300118F7A /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8F7CA20E0933300118F7A /* RangeSeekSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +73,13 @@
 		94A8F7B620E0325800118F7A /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 		94A8F7B820E0373000118F7A /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfirmationAlertView.swift; sourceTree = "<group>"; };
+		94A8F7BC20E060F900118F7A /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		94A8F7BE20E06CE800118F7A /* FilterByCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterByCell.swift; sourceTree = "<group>"; };
+		94A8F7C020E06D7000118F7A /* FilterItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemCell.swift; sourceTree = "<group>"; };
+		94A8F7C320E087BC00118F7A /* PriceRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceRangeCell.swift; sourceTree = "<group>"; };
+		94A8F7C820E0933300118F7A /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
+		94A8F7C920E0933300118F7A /* TapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapticEngine.swift; sourceTree = "<group>"; };
+		94A8F7CA20E0933300118F7A /* RangeSeekSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,7 @@
 				94A8F7AC20DFD0B800118F7A /* ApartmentDetailVC.swift */,
 				94A8F7AE20DFE7CE00118F7A /* SliderViewController.swift */,
 				94A8F7BA20E0490F00118F7A /* ComfirmationAlertView.swift */,
+				94A8F7BC20E060F900118F7A /* FilterVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -158,6 +173,7 @@
 		94A8F79D20DDD41C00118F7A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94A8F7C220E0878B00118F7A /* Filter */,
 				94A8F7A020DDE18000118F7A /* CustomView */,
 				94A8F7A520DED5EF00118F7A /* RentalsCell.swift */,
 				94A8F7A720DED6BD00118F7A /* ApartmentCell.swift */,
@@ -171,6 +187,7 @@
 		94A8F7A020DDE18000118F7A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				94A8F7C520E0929D00118F7A /* RangeSeekSlider */,
 				94A8F79E20DDD44300118F7A /* CardView.swift */,
 				94A8F7A120DDE19900118F7A /* CustomSegmentedControl.swift */,
 			);
@@ -184,6 +201,26 @@
 				94A8F7B820E0373000118F7A /* Feature.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		94A8F7C220E0878B00118F7A /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F7BE20E06CE800118F7A /* FilterByCell.swift */,
+				94A8F7C020E06D7000118F7A /* FilterItemCell.swift */,
+				94A8F7C320E087BC00118F7A /* PriceRangeCell.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		94A8F7C520E0929D00118F7A /* RangeSeekSlider */ = {
+			isa = PBXGroup;
+			children = (
+				94A8F7CA20E0933300118F7A /* RangeSeekSlider.swift */,
+				94A8F7C820E0933300118F7A /* RangeSeekSliderDelegate.swift */,
+				94A8F7C920E0933300118F7A /* TapticEngine.swift */,
+			);
+			path = RangeSeekSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,16 +303,23 @@
 			files = (
 				94A8F79920DDBCBE00118F7A /* Constants.swift in Sources */,
 				94A8F7A220DDE19900118F7A /* CustomSegmentedControl.swift in Sources */,
+				94A8F7C420E087BC00118F7A /* PriceRangeCell.swift in Sources */,
 				94A8F7A820DED6BD00118F7A /* ApartmentCell.swift in Sources */,
 				94A8F7AF20DFE7CE00118F7A /* SliderViewController.swift in Sources */,
 				94A8F7B920E0373000118F7A /* Feature.swift in Sources */,
 				94A8F7AD20DFD0B800118F7A /* ApartmentDetailVC.swift in Sources */,
 				94A8F75D20DDA1C700118F7A /* HomeVC.swift in Sources */,
+				94A8F7CD20E0933300118F7A /* RangeSeekSlider.swift in Sources */,
+				94A8F7CC20E0933300118F7A /* TapticEngine.swift in Sources */,
 				94A8F75B20DDA1C700118F7A /* AppDelegate.swift in Sources */,
+				94A8F7CB20E0933300118F7A /* RangeSeekSliderDelegate.swift in Sources */,
+				94A8F7C120E06D7000118F7A /* FilterItemCell.swift in Sources */,
 				94A8F7BB20E0490F00118F7A /* ComfirmationAlertView.swift in Sources */,
+				94A8F7BF20E06CE800118F7A /* FilterByCell.swift in Sources */,
 				94A8F7AB20DF308900118F7A /* Rental.swift in Sources */,
 				94A8F7B720E0325800118F7A /* FeatureCell.swift in Sources */,
 				94A8F7B120DFEB3E00118F7A /* PageCell.swift in Sources */,
+				94A8F7BD20E060F900118F7A /* FilterVC.swift in Sources */,
 				94A8F76E20DDB21800118F7A /* MainTabViewController.swift in Sources */,
 				94A8F7A620DED5EF00118F7A /* RentalsCell.swift in Sources */,
 				94A8F79F20DDD44300118F7A /* CardView.swift in Sources */,

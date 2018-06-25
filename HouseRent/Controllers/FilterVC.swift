@@ -1,21 +1,25 @@
 //
-//  HomeVC.swift
+//  FilterVC.swift
 //  HouseRent
 //
-//  Created by SimpuMind on 6/22/18.
+//  Created by SimpuMind on 6/25/18.
 //  Copyright © 2018 SimpuMind. All rights reserved.
 //
 
 import UIKit
 
-class HomeVC: UIViewController {
+class FilterVC: UIViewController {
 
-    var didSetupConstraints = false
+    let getFilteItems = [
+        "Tenant Type" : ["Family", "Bachelor"],
+        "Looking For": ["1 BHK", "2 BHK", "3 BHK", "4 BHK", "5 BHK"],
+        "Features": ["Car Parking", "2 baths", "Elevator", "24/7 Water", "24/7 Electricity"]
+    ]
     
-    var blocks = [Block]()
+    var keys = [String]()
     
     private lazy var headerView: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -30,7 +34,7 @@ class HomeVC: UIViewController {
     }()
     
     private lazy var searchTextField: UITextField = {
-       let tf = UITextField()
+        let tf = UITextField()
         tf.font = UIFont.setFont(of: 14)
         tf.borderStyle = .none
         tf.placeholder = "Type location"
@@ -38,24 +42,22 @@ class HomeVC: UIViewController {
         return tf
     }()
     
-    private lazy var segmentedControl: CustomSegmentedControl = {
-        let sc = CustomSegmentedControl()
-        sc.items = ["Near Me", "Explore City", "Popular", "View Map"]
-        sc.font = UIFont.setBoldFont(of: 12)
-        sc.selectedIndex = 0
-        sc.backgroundColor = .white
-        sc.borderSize = 2
-        sc.thumbColor = Constants.primaryColor
-        sc.thumUnderLineSize = 2
-        sc.unselectedLabelColor = UIColor(red: 0.28, green: 0.53, blue: 1, alpha: 0.3)
-        sc.selectedLabelColor = Constants.primaryColor
-        //sc.selectorColor = Constants.primaryColor
-        sc.translatesAutoresizingMaskIntoConstraints = false
-        return sc
+    private lazy var containerView: UIView = {
+       let view = UIView()
+        view.backgroundColor = .white
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    private lazy var parentView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     private lazy var tableView: UITableView = {
-       let tv = UITableView()
+        let tv = UITableView()
         tv.separatorStyle = .none
         tv.backgroundColor = .clear
         tv.translatesAutoresizingMaskIntoConstraints = false
@@ -64,6 +66,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 15))
@@ -71,35 +74,24 @@ class HomeVC: UIViewController {
         imageView.contentMode = .scaleAspectFit
         searchTextField.leftViewMode = .always
         searchTextField.leftView = imageView
-        [headerView, tableView].forEach {view.addSubview($0)}
-        [searchView, segmentedControl].forEach {headerView.addSubview($0)}
+        [headerView, parentView, tableView].forEach {view.addSubview($0)}
+        [searchView].forEach {headerView.addSubview($0)}
         searchView.addSubview(searchTextField)
-        
+        parentView.addSubview(containerView)
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(RentalsCell.self, forCellReuseIdentifier: "cell")
-        
-        parseData()
+        tableView.register(FilterByCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(PriceRangeCell.self, forCellReuseIdentifier: "priceRangeCell")
+        keys = Array(self.getFilteItems.keys)
+        keys.append("Price Range")
     }
     
-    private func parseData(){
-        if let path = Bundle.main.path(forResource: "test", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let rental = try? JSONDecoder().decode(Rental.self, from: data)
-                if let rental = rental {
-                    DispatchQueue.main.async {
-                        self.blocks = rental.blocks
-                        self.tableView.reloadData()
-                    }
-                }
-            } catch {
-                // handle error
-            }
-        }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        view.layoutIfNeeded()
+        containerView.layer.addBorder(edge: .top, color: Constants.primaryColor, thickness: 3)
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setTransparentNavigationBar()
@@ -123,23 +115,26 @@ class HomeVC: UIViewController {
         searchTextField.topAnchor.align(to: searchView.topAnchor)
         searchTextField.bottomAnchor.align(to: searchView.bottomAnchor)
         
-        segmentedControl.leftAnchor.align(to: headerView.leftAnchor)
-        segmentedControl.rightAnchor.align(to: headerView.rightAnchor)
-        segmentedControl.bottomAnchor.align(to: headerView.bottomAnchor)
-        segmentedControl.heightAnchor.equal(to: 30)
+        parentView.fill(view)
         
-        tableView.topAnchor.align(to: headerView.bottomAnchor)
-        tableView.leftAnchor.align(to: view.leftAnchor)
-        tableView.rightAnchor.align(to: view.rightAnchor)
-        tableView.bottomAnchor.align(to: view.bottomAnchor)
+        containerView.topAnchor.align(to: parentView.topAnchor, offset: 80)
+        containerView.leftAnchor.align(to: parentView.leftAnchor)
+        containerView.rightAnchor.align(to: parentView.rightAnchor)
+        containerView.bottomAnchor.align(to: parentView.bottomAnchor)
+        
+        
+        tableView.topAnchor.align(to: containerView.topAnchor, offset: 20)
+        tableView.leftAnchor.align(to: containerView.leftAnchor)
+        tableView.rightAnchor.align(to: containerView.rightAnchor)
+        tableView.bottomAnchor.align(to: containerView.bottomAnchor)
     }
 
 }
 
-extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+extension FilterVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return blocks.count
+        return keys.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -147,21 +142,24 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RentalsCell
-        cell.apartments = blocks[indexPath.section].children
-        cell.section = indexPath.section
-        cell.delegate = self
-        return cell
+        if indexPath.section == keys.count - 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "priceRangeCell", for: indexPath) as! PriceRangeCell
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FilterByCell
+                cell.items = getFilteItems[keys[indexPath.section]]!
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let title = blocks[section].name
+        let title = keys[section]
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 44))
-        headerView.backgroundColor = view.backgroundColor
+        headerView.backgroundColor = .clear
         let label = UILabel(frame: CGRect(x: 22, y:0, width: tableView.bounds.size.width, height: 44))
-        label.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1)
-        label.font = UIFont.setFont(of: 11)
-        label.textColor = UIColor(red: 0.67, green: 0.67, blue: 0.67, alpha: 1)
+        label.backgroundColor = .clear
+        label.font = UIFont.setBoldFont(of: 14)
+        label.textColor = UIColor(red: 0.2, green: 0.23, blue: 0.27, alpha: 1)
         label.text = title
         headerView.addSubview(label)
         return headerView
@@ -170,16 +168,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return 44
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 266 + 20
-    }
-}
-
-extension HomeVC: RentalDelegate {
-    func didSelectRowForRentals(_ indexPath: IndexPath, section: Int) {
-        let apartment = blocks[section].children[indexPath.item]
-        let vc = ApartmentDetailVC()
-        vc.apartment = apartment
-        vc.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(vc, animated: true)
+        if indexPath.section == keys.count - 1 {
+            return 150
+        }
+        return 60
     }
 }

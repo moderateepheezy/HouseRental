@@ -32,22 +32,18 @@ class MainTabViewController: UITabBarController {
         let controller1 = HomeVC()
         controller1.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "home"), tag: 1)
         let nav1 = UINavigationController(rootViewController: controller1)
-        nav1.hidesBottomBarWhenPushed = true
         
-        let controller2 = HomeVC()
+        let controller2 = FilterVC()
         controller2.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "filter"), tag: 2)
         let nav2 = UINavigationController(rootViewController: controller2)
-        nav2.hidesBottomBarWhenPushed = true
         
         let controller3 = HomeVC()
         controller3.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "notification"), tag: 3)
         let nav3 = UINavigationController(rootViewController: controller3)
-        nav3.hidesBottomBarWhenPushed = true
         
         let controller4 = HomeVC()
         controller4.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "profile"), tag: 3)
         let nav4 = UINavigationController(rootViewController: controller4)
-        nav4.hidesBottomBarWhenPushed = true
         
         viewControllers = [nav1, nav2, nav3, nav4]
         

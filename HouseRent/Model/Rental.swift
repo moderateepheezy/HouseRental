@@ -25,3 +25,4 @@ struct Apartment: Codable {
         case imageURL = "image_url"
     }
 }
+
